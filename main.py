@@ -35,7 +35,7 @@ print(birthday_data_dict)
 for person in birthday_data_dict :
 	if person["month"] == today_tuple[0] and person["day"] ==today_tuple[1]:
 		print(f"Today is {person['name']}'s birthday!")
-		filepath = f"letter_templates/letter_{random.randint(1,3)}.txt"
+		filepath = f"letter_template/letter_{random.randint(1,3)}.txt"
 		print(filepath)
 
 		with open (filepath) as letter_file :
